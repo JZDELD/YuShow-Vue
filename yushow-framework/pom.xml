@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yushow-common</artifactId>
+    <artifactId>yushow-framework</artifactId>
 
-    <description>common通用工具</description>
+    <description>framework框架核心</description>
 
 </project>

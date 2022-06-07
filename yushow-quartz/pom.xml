@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yushow-common</artifactId>
+    <artifactId>yushow-quartz</artifactId>
 
-    <description>common通用工具</description>
+    <description>quartz定时任务</description>
 
 </project>

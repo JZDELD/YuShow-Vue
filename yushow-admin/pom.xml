@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yushow-common</artifactId>
+    <artifactId>yushow-admin</artifactId>
 
-    <description>common通用工具</description>
+    <description>web服务入口</description>
 
 </project>
