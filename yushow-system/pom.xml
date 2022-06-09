@@ -13,4 +13,12 @@
 
     <description>system系统模块</description>
 
+    <dependencies>
+        <!-- 通用工具-->
+        <dependency>
+            <groupId>com.yushow</groupId>
+            <artifactId>yushow-common</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
