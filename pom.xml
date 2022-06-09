@@ -20,11 +20,14 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+        <spring-boot.version>2.5.13</spring-boot.version>
+        <hutool.version>5.7.7</hutool.version>
         <druid.version>1.2.8</druid.version>
         <bitwalker.version>1.21</bitwalker.version>
         <swagger.version>3.0.0</swagger.version>
         <kaptcha.version>2.3.2</kaptcha.version>
         <mybatis-spring-boot.version>2.2.2</mybatis-spring-boot.version>
+        <mybatis-plus-boot.version>3.4.3</mybatis-plus-boot.version>
         <pagehelper.boot.version>1.4.1</pagehelper.boot.version>
         <fastjson.version>1.2.80</fastjson.version>
         <oshi.version>6.1.2</oshi.version>
@@ -40,12 +43,11 @@
     <!-- 依赖声明 -->
     <dependencyManagement>
         <dependencies>
-
             <!-- SpringBoot的依赖配置-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.5.13</version>
+                <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -64,18 +66,11 @@
                 <version>${bitwalker.version}</version>
             </dependency>
 
-            <!-- SpringBoot集成mybatis框架 -->
+            <!-- mybatis plus -->
             <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis-spring-boot.version}</version>
-            </dependency>
-
-            <!-- pagehelper 分页插件 -->
-            <dependency>
-                <groupId>com.github.pagehelper</groupId>
-                <artifactId>pagehelper-spring-boot-starter</artifactId>
-                <version>${pagehelper.boot.version}</version>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot.version}</version>
             </dependency>
 
             <!-- 获取系统信息 -->
@@ -200,7 +195,6 @@
                 <artifactId>yushow-common</artifactId>
                 <version>${yushow.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
@@ -214,9 +208,20 @@
     </modules>
     <packaging>pom</packaging>
 
-
     <dependencies>
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
+        <!-- hutool工具类 -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
