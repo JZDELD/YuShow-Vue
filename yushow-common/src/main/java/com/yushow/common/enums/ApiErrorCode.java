@@ -1,6 +1,6 @@
 package com.yushow.common.enums;
 
-import com.yushow.common.code.api.IErrorCode;
+import com.yushow.common.core.api.IErrorCode;
 
 /**
  * REST API 错误码

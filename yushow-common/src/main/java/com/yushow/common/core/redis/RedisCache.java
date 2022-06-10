@@ -1,4 +1,4 @@
-package com.yushow.common.code.redis;
+package com.yushow.common.core.redis;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.BoundSetOperations;

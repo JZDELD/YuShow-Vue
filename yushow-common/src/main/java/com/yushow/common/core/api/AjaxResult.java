@@ -1,4 +1,4 @@
-package com.yushow.common.code.api;
+package com.yushow.common.core.api;
 
 import com.yushow.common.enums.ApiErrorCode;
 import com.yushow.common.exception.ApiException;

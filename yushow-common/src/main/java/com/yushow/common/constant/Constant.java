@@ -8,7 +8,7 @@ import io.jsonwebtoken.Claims;
  * @author kyj
  * @date 2022/6/8 13:47
  */
-public interface Constants {
+public interface Constant {
     /**
      * UTF-8 字符集
      */

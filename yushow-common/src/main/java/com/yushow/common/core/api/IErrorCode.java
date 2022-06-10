@@ -1,4 +1,4 @@
-package com.yushow.common.code.api;
+package com.yushow.common.core.api;
 
 /**
  * REST API 错误码接口

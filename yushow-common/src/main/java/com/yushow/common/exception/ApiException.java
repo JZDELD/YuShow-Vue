@@ -1,6 +1,6 @@
 package com.yushow.common.exception;
 
-import com.yushow.common.code.api.IErrorCode;
+import com.yushow.common.core.api.IErrorCode;
 
 /**
  * REST API 请求异常类

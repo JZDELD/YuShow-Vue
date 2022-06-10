@@ -30,6 +30,7 @@
         <mybatis-plus-boot.version>3.4.3</mybatis-plus-boot.version>
         <pagehelper.boot.version>1.4.1</pagehelper.boot.version>
         <fastjson.version>1.2.80</fastjson.version>
+        <easyjson.version>3.2.8</easyjson.version>
         <oshi.version>6.1.2</oshi.version>
         <jna.version>5.10.0</jna.version>
         <commons.io.version>2.11.0</commons.io.version>
@@ -145,6 +146,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.fangjinuo.easyjson</groupId>
+                <artifactId>easyjson-jackson</artifactId>
+                <version>${easyjson.version}</version>
             </dependency>
 
             <!-- Token生成与解析-->
