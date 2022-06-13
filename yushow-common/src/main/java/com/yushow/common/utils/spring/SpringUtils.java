@@ -1,6 +1,6 @@
 package com.yushow.common.utils.spring;
 
-import cn.hutool.core.util.ArrayUtil;
+import com.yushow.common.utils.StringUtils;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
@@ -126,6 +126,6 @@ public final class SpringUtils implements BeanFactoryPostProcessor, ApplicationC
      */
     public static String getActiveProfile() {
         final String[] activeProfiles = getActiveProfiles();
-        return ArrayUtil.isNotEmpty(activeProfiles) ? activeProfiles[0] : null;
+        return StringUtils.isNotEmpty(activeProfiles) ? activeProfiles[0] : null;
     }
 }

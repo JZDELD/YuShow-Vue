@@ -224,12 +224,12 @@
         </dependency>
 
         <!-- hutool工具类 -->
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <scope>compile</scope>
-            <version>${hutool.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>cn.hutool</groupId>-->
+<!--            <artifactId>hutool-all</artifactId>-->
+<!--            <scope>compile</scope>-->
+<!--            <version>${hutool.version}</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

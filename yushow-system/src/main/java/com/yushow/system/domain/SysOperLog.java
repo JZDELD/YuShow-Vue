@@ -5,6 +5,7 @@ import com.yushow.common.annotation.Excel;
 import com.yushow.common.annotation.Excel.ColumnType;
 import com.yushow.common.core.domain.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.Date;
 
@@ -14,6 +15,7 @@ import java.util.Date;
  * @author ruoyi
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class SysOperLog extends BaseEntity {
     private static final long serialVersionUID = 1L;
 
