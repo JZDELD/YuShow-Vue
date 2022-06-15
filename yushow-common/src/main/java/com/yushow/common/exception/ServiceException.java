@@ -11,7 +11,7 @@ public final class ServiceException extends RuntimeException {
     /**
      * 错误码
      */
-    private Long code;
+    private int code;
 
     /**
      * 错误提示
@@ -35,7 +35,7 @@ public final class ServiceException extends RuntimeException {
         this.message = message;
     }
 
-    public ServiceException(String message, Long code) {
+    public ServiceException(String message, int code) {
         this.message = message;
         this.code = code;
     }
@@ -49,7 +49,7 @@ public final class ServiceException extends RuntimeException {
         return message;
     }
 
-    public Long getCode() {
+    public int getCode() {
         return code;
     }
 

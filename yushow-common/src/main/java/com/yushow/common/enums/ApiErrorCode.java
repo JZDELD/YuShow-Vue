@@ -49,10 +49,10 @@ public enum ApiErrorCode implements IErrorCode {
      */
     ERROR(500, "系统错误，请稍后再试！");
 
-    private final long code;
+    private final int code;
     private final String msg;
 
-    ApiErrorCode(final long code, final String msg) {
+    ApiErrorCode(final int code, final String msg) {
         this.code = code;
         this.msg = msg;
     }
@@ -68,7 +68,7 @@ public enum ApiErrorCode implements IErrorCode {
     }
 
     @Override
-    public long getCode() {
+    public int getCode() {
         return code;
     }
 

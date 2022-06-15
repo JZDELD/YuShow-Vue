@@ -1,6 +1,6 @@
 package com.yushow.common.utils;
 
-import com.yushow.common.constant.Constant;
+import com.yushow.common.constant.RedisKeyConstant;
 import com.yushow.common.core.domain.entity.SysDictData;
 import com.yushow.common.core.redis.RedisCache;
 import com.yushow.common.utils.spring.SpringUtils;
@@ -166,7 +166,7 @@ public class DictUtils
      */
     public static void clearDictCache()
     {
-        Collection<String> keys = SpringUtils.getBean(RedisCache.class).keys(Constant.SYS_DICT_KEY + "*");
+        Collection<String> keys = SpringUtils.getBean(RedisCache.class).keys(RedisKeyConstant.SYS_DICT_KEY + "*");
         SpringUtils.getBean(RedisCache.class).deleteObject(keys);
     }
 
@@ -178,6 +178,6 @@ public class DictUtils
      */
     public static String getCacheKey(String configKey)
     {
-        return Constant.SYS_DICT_KEY + configKey;
+        return RedisKeyConstant.SYS_DICT_KEY + configKey;
     }
 }

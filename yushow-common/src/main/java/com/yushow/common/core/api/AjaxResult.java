@@ -57,6 +57,10 @@ public class AjaxResult<T> implements Serializable {
         return restResult(null, ApiErrorCode.FAILED.getCode(), msg);
     }
 
+    public static <T> AjaxResult<T> failed(long code, String msg) {
+        return restResult(null, code, msg);
+    }
+
     public static <T> AjaxResult<T> failed(IErrorCode errorCode) {
         return restResult(null, errorCode);
     }

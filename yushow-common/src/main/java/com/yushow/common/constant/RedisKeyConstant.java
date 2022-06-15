@@ -7,6 +7,17 @@ package com.yushow.common.constant;
  * @date 2022/6/8 13:50
  */
 public interface RedisKeyConstant {
+
+    /**
+     * 参数管理 cache key
+     */
+    String SYS_CONFIG_KEY = "sys_config:";
+
+    /**
+     * 字典管理 cache key
+     */
+    String SYS_DICT_KEY = "sys_dict:";
+
     /**
      * 验证码 redis key
      */
